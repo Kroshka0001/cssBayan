@@ -219,6 +219,16 @@ footer p {
     background-image: url(./assets/svg/cross.svg);
   }
 
+  .memo_label:active {
+    opacity: 0.7;
+    transition: opacity 0.3s ease 0s;
+  }
+
+  .memo_label:active > .memo_body {
+    color: #960a0a;
+    transition: color 0.3s ease 0s;
+  }
+
 }
 
 @media (max-width: 820px) {
