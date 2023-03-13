@@ -88,6 +88,7 @@ header {
   appearance: none;
   position: static;
 }
+
 .memo_label {
   cursor: pointer;
   padding-bottom: 0.01rem;
@@ -101,6 +102,7 @@ header {
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2),
     0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
 }
+
 .memo_title {
   cursor: pointer;
   display: block;
@@ -146,6 +148,10 @@ header {
   width: 9rem;
 }
 
+.memo_input:checked ~ .memo_title {
+  color: #fff;
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -187,7 +193,6 @@ footer p {
     height: 100%;
     opacity: 1;
     transition: all 0.6s ease-in;
-    color: #207962;
   }
 
   .memo_label:hover > .memo_body img {
@@ -204,6 +209,7 @@ footer p {
   }
 
   .memo:hover .memo_item:hover .memo_title {
+    color: #fff;
     transition: 0.6s;
     background-image: url(./assets/svg/cross.svg);
   }
